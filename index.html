@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match 241</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+//Commencer par declaré vos tableaux 
+    var nomhomme = ['Prince', 'Junior', 'Nell', 'Nicodeme', 'Rossy', 'Jooris', 'Tell', 'Christian', 'Franck', 'LEVY', 'Emmanuel','Coach Yohann','Coach Jess'];
+    var nomfemme = ['Wendy', 'Anouchka', 'Marland', 'Naicka', 'Gretta', 'Benie', 'Gaella', 'Jeryna', 'Respo'];
+    var nomphrase = ['sont faits pour être ensemble', 'ne sont pas faits pour être ensemble'];
+//Ensuite declaré vos differents mode aleatoires
+    var valeurAleaH = Math.floor(Math.random() * nomhomme.length);
+    var valeurAleaF = Math.floor(Math.random() * nomfemme.length);
+    var valeurAleaPh = Math.floor(Math.random() * nomphrase.length);
+//Apres declaré vos objets aleatoire
+    var nomAleaH = nomhomme[valeurAleaH];
+    var nomAleaF = nomfemme[valeurAleaF];
+    var nomAleaPh = nomphrase[valeurAleaPh];
+//Enfin declaré votre phrase
+    document.write(`${nomAleaH} et ${nomAleaF} ${nomAleaPh}`);
+
+</script>
+</html>
